@@ -31,8 +31,8 @@
 			<div class="col-md-2 text-center">
 				<a href="/"><img src="img/logo.png" alt /></a>
 			</div>
-			<div class="col-md-5">
-				
+			<div class="col-md-5 text-left">
+				<a href="javascript:loadTable()">רענן</a>
 			</div>
 		</div>
 	</header>
@@ -44,19 +44,20 @@
 			<tr>
 				<th>מס' הזמנה</th>
 				<th>מען</th>
-				<th>תאריך ושעה</th>
+				<th width="250">תאריך ושעה</th>
 				<th>סטטוס</th>
 				<th>אפשרויות</th>
 			</tr>
 		</thead>
-		<tbody>
+		<tbody id="table_data">
 			<tr>
 				<td colspan="5" class="text-center">הנתונים בטעינה...</td>
 			</tr>
 		</tbody>
 	</table>
 	
-    <script type="text/javascript" src="cordova.js"></script>
+    <!-- <script type="text/javascript" src="cordova.js"></script> -->
+    <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/popper.js"></script>
     <script type="text/javascript" src="js/index.js"></script>

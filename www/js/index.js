@@ -31,9 +31,22 @@ function loadTable()
 		async: false,
 		type: "POST",
 		url: "https://order.yummyyummy.co.il/ajax/load-shippings",
-		data: device.uuid,
+		data: "device=" + device.uuid,
 		success: function(data) {
 			$("#table_data").html(data);
+		}
+	});
+}
+
+function changeStatus(orderid, status)
+{
+	$.ajax({
+		aync: false,
+		type: "POST", 
+		url: "https://order.yummyyummy.co.il/ajax/change-order-status",
+		data: "orderid=" + orderid + "&status=" + status,
+		success: function() {
+			loadTable();
 		}
 	});
 }
@@ -45,17 +58,17 @@ function onDeviceReady()
 	StatusBar.overlaysWebView(false);
 	StatusBar.styleBlackOpaque();
 	StatusBar.show();
-	StatusBar.backgroundColorByHexString("#c32026");
+	StatusBar.backgroundColorByHexString("#e22753");
 	screen.orientation.lock('portrait');
 	
 	checkConnection();
 	
 	setTimeout(function() {
-		$("#lottie").hide("slow");
-	} 3000);
+		$("#lottie").fadeOut("fast");
+	}, 1500);
 	
 	loadTable();
-	var ajax = setInterval(function() { loadTable(); }, 15000);
+	var ajax = setInterval(function() { loadTable(); }, 30000);
 }
 
 function onPause() {
@@ -78,35 +91,3 @@ function goSettings()
 {
 	cordova.plugins.settings.openSetting("wifi");
 }
-
-var app = {
-    // Application Constructor
-    initialize: function() {
-        this.bindEvents();
-    },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-        app.receivedEvent('deviceready');
-    },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
-    }
-};
