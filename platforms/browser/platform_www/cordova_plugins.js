@@ -382,6 +382,14 @@ module.exports = [
         "id": "cordova-plugin-statusbar.StatusBarProxy",
         "pluginId": "cordova-plugin-statusbar",
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-lottie-splashscreen/dist/www/lottie-splashscreen.js",
+        "id": "cordova-plugin-lottie-splashscreen.LottieSplashScreen",
+        "pluginId": "cordova-plugin-lottie-splashscreen",
+        "clobbers": [
+            "lottie.splashscreen"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -398,7 +406,8 @@ module.exports.metadata =
     "cordova-plugin-network-information": "1.3.4",
     "cordova-plugin-vibration": "2.1.6",
     "cordova-plugin-screen-orientation": "3.0.2",
-    "cordova-plugin-statusbar": "2.4.3"
+    "cordova-plugin-statusbar": "2.4.3",
+    "cordova-plugin-lottie-splashscreen": "0.8.1"
 }
 // BOTTOM OF METADATA
 });

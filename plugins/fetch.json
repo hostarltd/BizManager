@@ -118,5 +118,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-lottie-splashscreen": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-lottie-splashscreen@^0.8.1"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

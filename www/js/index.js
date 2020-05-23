@@ -60,7 +60,7 @@ function onDeviceReady()
 	StatusBar.show();
 	StatusBar.backgroundColorByHexString("#e22753");
 	screen.orientation.lock('portrait');
-	
+
 	checkConnection();
 	
 	setTimeout(function() {

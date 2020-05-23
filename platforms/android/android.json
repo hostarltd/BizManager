@@ -63,6 +63,10 @@
             {
               "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"LottieSplashScreen\"><param name=\"android-package\" value=\"de.dustplanet.cordova.lottie.LottieSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -161,6 +165,9 @@
       "PACKAGE_NAME": "com.makeapp.bizmanager"
     },
     "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.makeapp.bizmanager"
+    },
+    "cordova-plugin-lottie-splashscreen": {
       "PACKAGE_NAME": "com.makeapp.bizmanager"
     }
   },
@@ -557,6 +564,14 @@
       "clobbers": [
         "window.StatusBar"
       ]
+    },
+    {
+      "id": "cordova-plugin-lottie-splashscreen.LottieSplashScreen",
+      "file": "plugins/cordova-plugin-lottie-splashscreen/dist/www/lottie-splashscreen.js",
+      "pluginId": "cordova-plugin-lottie-splashscreen",
+      "clobbers": [
+        "lottie.splashscreen"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -573,6 +588,7 @@
     "cordova-plugin-vibration": "2.1.6",
     "es6-promise-plugin": "4.2.2",
     "cordova-plugin-screen-orientation": "3.0.2",
-    "cordova-plugin-statusbar": "2.4.3"
+    "cordova-plugin-statusbar": "2.4.3",
+    "cordova-plugin-lottie-splashscreen": "0.8.1"
   }
 }
