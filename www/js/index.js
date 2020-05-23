@@ -31,7 +31,7 @@ function loadTable()
 		async: false,
 		type: "POST",
 		url: "https://order.yummyyummy.co.il/ajax/load-shippings",
-		data: "device=" + 1,
+		data: "device=" + device.uuid,
 		success: function(data) {
 			$("#table_data").html(data);
 		}
@@ -67,14 +67,25 @@ function onDeviceReady()
 		$("#lottie").fadeOut("fast");
 	}, 1500);
 	
-	/*window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-	
 	var notificationOpenedCallback = function(jsonData) {
-		alert('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+		console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
 	};
+	// Set your iOS Settings
+	var iosSettings = {};
+	iosSettings["kOSSettingsKeyAutoPrompt"] = false;
+	iosSettings["kOSSettingsKeyInAppLaunchURL"] = false;
 
-	window.plugins.OneSignal.startInit("ca3d04d1-39c5-4a30-b82d-24ff00c8668e").handleNotificationOpened(notificationOpenedCallback).endInit();
-	*/
+	window.plugins.OneSignal
+	.startInit("ca3d04d1-39c5-4a30-b82d-24ff00c8668e")
+	.handleNotificationOpened(notificationOpenedCallback)
+	.iOSSettings(iosSettings)
+	.inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.Notification)
+	.endInit();
+
+	// The promptForPushNotificationsWithUserResponse function will show the iOS push notification prompt. We recommend removing the following code and instead using an In-App Message to prompt for notification permission (See step 6)
+	window.plugins.OneSignal.promptForPushNotificationsWithUserResponse(function(accepted) {
+		console.log("User accepted notifications: " + accepted);
+	});
 	
 	loadTable();
 	var ajax = setInterval(function() { loadTable(); }, 30000);
