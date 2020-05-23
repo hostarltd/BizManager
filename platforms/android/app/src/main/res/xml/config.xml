@@ -76,7 +76,6 @@
     <preference name="android-minSdkVersion" value="15" />
     <preference name="android-targetSdkVersion" value="26" />
     <preference name="orientation" value="landscape" />
-    <preference name="SplashScreen" value="none" />
     <preference name="LottieAnimationLocation" value="www/js/logo.json" />
     <preference name="LottieFullScreen" value="true" />
     <preference name="LottieLoopAnimation" value="true" />
