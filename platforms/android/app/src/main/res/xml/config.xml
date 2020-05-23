@@ -1,81 +1,26 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.makeapp.bizmanager" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <feature name="Battery">
-        <param name="android-package" value="org.apache.cordova.batterystatus.BatteryListener" />
-    </feature>
-    <feature name="Camera">
-        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
-    </feature>
-    <feature name="Device">
-        <param name="android-package" value="org.apache.cordova.device.Device" />
-    </feature>
-    <feature name="Notification">
-        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
-    </feature>
-    <feature name="File">
-        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
-        <param name="onload" value="true" />
-    </feature>
-    <allow-navigation href="cdvfile:*" />
-    <feature name="Geolocation">
-        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
-    </feature>
-    <feature name="Globalization">
-        <param name="android-package" value="org.apache.cordova.globalization.Globalization" />
-    </feature>
-    <feature name="InAppBrowser">
-        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-    </feature>
-    <feature name="Capture">
-        <param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
-    </feature>
-    <feature name="NetworkStatus">
-        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
-    </feature>
-    <feature name="Vibration">
-        <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
-    </feature>
-    <feature name="CDVOrientation">
-        <param name="android-package" value="cordova.plugins.screenorientation.CDVOrientation" />
-    </feature>
-    <feature name="StatusBar">
-        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="OneSignalPush">
-        <param name="android-package" value="com.plugin.gcm.OneSignalPush" />
-    </feature>
-    <name>BizManager</name>
-    <description>An application created for YummyYummy.co.il</description>
-    <author email="roy@makeapp.co.il" href="https://www.makeapp.co.il/">
-		MakeAPP
-    </author>
-    <content src="index.html" />
-    <access origin="*" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
-    <icon density="ldpi" src="res/icon/android/ldpi.png" />
-    <icon density="mdpi" src="res/icon/android/mdpi.png" />
-    <icon density="hdpi" src="res/icon/android/hdpi.png" />
-    <icon density="xhdpi" src="res/icon/android/xhdpi.png" />
-    <icon density="xxhdpi" src="res/icon/android/xxhdpi.png" />
-    <icon density="xxxhdpi" src="res/icon/android/xxxhdpi.png" />
-    <splash density="port-ldpi" src="res/screen/android/splash-port-ldpi.png" />
-    <splash density="port-mdpi" src="res/screen/android/splash-port-mdpi.png" />
-    <splash density="port-hdpi" src="res/screen/android/splash-port-hdpi.png" />
-    <splash density="port-xhdpi" src="res/screen/android/splash-port-xhdpi.png" />
-    <splash density="port-xxhdpi" src="res/screen/android/splash-port-xxhdpi.png" />
-    <splash density="port-xxxhdpi" src="res/screen/android/splash-port-xxxhdpi.png" />
-    <allow-intent href="market:*" />
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        id        = "io.cordova.helloCordova"
+        version   = "2.0.0">
+
+    <!-- Preferences for Android -->
     <preference name="loglevel" value="DEBUG" />
-    <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="15" />
-    <preference name="android-targetSdkVersion" value="26" />
-    <preference name="orientation" value="landscape" />
-    <preference name="SplashMaintainAspectRatio" value="true" />
-    <preference name="SplashShowOnlyFirstTime" value="true" />
 </widget>
