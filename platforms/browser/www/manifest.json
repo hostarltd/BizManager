@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "BizManager",
+  "short_name": "BizManager",
+  "version": "com.makeapp.bizmanager",
+  "description": "An application created for YummyYummy.co.il",
+  "author": "MakeAPP",
+  "icons": [],
+  "start_url": "index.html"
+}

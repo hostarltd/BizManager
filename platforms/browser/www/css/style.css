@@ -1,0 +1,15 @@
+* { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+
+body { -webkit-touch-callout: none; -webkit-text-size-adjust: none; -webkit-user-select: none; background-image: url('../img/logo-background.png'); background-repeat: no-repeat; background-attachment: fixed; background-position: center; }
+
+header { float: right; height: 90px; width: 100%; background-color: #e22753; padding: 1rem 0; }
+header .row { margin: 0; }
+header .row .col-md-5 { font-weight: bold; color: #fff; padding-top: 15px; }
+header .col-md-2 img { width: 50%; }
+
+table { width: 100%; }
+table thead tr th { background: #ea5976; padding: 3rem 2rem 1rem; border-left: 1px solid #fc6986; color: rgb(254, 247, 215); }
+table tbody tr td { padding: 1rem 2rem; border-bottom: 1px solid #ea5976; }
+table tbody tr td .btn { border-radius: 0; font-weight: bold; }
+
+.clearfix { clear: both; }
