@@ -31,7 +31,7 @@ function loadTable()
 		async: false,
 		type: "POST",
 		url: "https://order.yummyyummy.co.il/ajax/load-shippings",
-		data: "device=" + 1,
+		data: "device=" + device.uuid,
 		success: function(data) {
 			$("#table_data").html(data);
 		}
