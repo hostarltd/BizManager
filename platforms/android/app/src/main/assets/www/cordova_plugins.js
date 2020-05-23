@@ -391,6 +391,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "window.StatusBar"
       ]
+    },
+    {
+      "id": "onesignal-cordova-plugin.OneSignal",
+      "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
+      "pluginId": "onesignal-cordova-plugin",
+      "clobbers": [
+        "OneSignal"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -407,6 +415,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-vibration": "2.1.6",
     "es6-promise-plugin": "4.2.2",
     "cordova-plugin-screen-orientation": "3.0.2",
-    "cordova-plugin-statusbar": "2.4.3"
+    "cordova-plugin-statusbar": "2.4.3",
+    "onesignal-cordova-plugin": "2.9.1"
   };
 });

@@ -36,6 +36,9 @@
     },
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.makeapp.bizmanager"
+    },
+    "onesignal-cordova-plugin": {
+      "PACKAGE_NAME": "com.makeapp.bizmanager"
     }
   },
   "dependent_plugins": {
