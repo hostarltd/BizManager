@@ -31,7 +31,7 @@ function loadTable()
 		async: false,
 		type: "POST",
 		url: "https://order.yummyyummy.co.il/ajax/load-shippings",
-		data: "device=" + device.uuid,
+		data: "device=" + 1,
 		success: function(data) {
 			$("#table_data").html(data);
 		}
@@ -62,7 +62,15 @@ function onDeviceReady()
 	screen.orientation.lock('portrait');
 	
 	checkConnection();
+	/*window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
 	
+	var notificationOpenedCallback = function(jsonData) {
+		alert('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+	};
+
+	window.plugins.OneSignal.startInit("ca3d04d1-39c5-4a30-b82d-24ff00c8668e").handleNotificationOpened(notificationOpenedCallback).endInit();
+	// window.plugins.OneSignal.sendTag("uuid", deviceID);
+*/
 	setTimeout(function() {
 		$("#lottie").fadeOut("fast");
 	}, 1500);
