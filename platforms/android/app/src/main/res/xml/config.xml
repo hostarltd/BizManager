@@ -42,8 +42,8 @@
         <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="PushbotsPlugin">
-        <param name="android-package" value="com.pushbots.plugin.PushbotsPlugin" />
+    <feature name="OneSignalPush">
+        <param name="android-package" value="com.plugin.gcm.OneSignalPush" />
     </feature>
     <name>BizManager</name>
     <description>An application created for YummyYummy.co.il</description>
@@ -73,7 +73,7 @@
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-minSdkVersion" value="15" />
     <preference name="android-targetSdkVersion" value="26" />
     <preference name="orientation" value="landscape" />
 </widget>

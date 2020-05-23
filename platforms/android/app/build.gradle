@@ -98,7 +98,7 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "../pushbots-cordova-plugin/bizmanager-build-extras.gradle"
+apply from: "../onesignal-cordova-plugin/bizmanager-build-extras-onesignal.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()
@@ -295,7 +295,7 @@ dependencies {
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
     implementation "com.android.support:support-v4:24.1.1+"
-    implementation "com.pushbots:pushbots-lib:3.3.0-beta5@aar"
+    implementation "com.onesignal:OneSignal:3.13.2"
     // SUB-PROJECT DEPENDENCIES END
 }
 

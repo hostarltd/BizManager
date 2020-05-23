@@ -37,7 +37,7 @@
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.makeapp.bizmanager"
     },
-    "pushbots-cordova-plugin": {
+    "onesignal-cordova-plugin": {
       "PACKAGE_NAME": "com.makeapp.bizmanager"
     }
   },

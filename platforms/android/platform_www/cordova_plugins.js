@@ -393,11 +393,11 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "pushbots-cordova-plugin.PushbotsPlugin",
-      "file": "plugins/pushbots-cordova-plugin/www/pushbots.js",
-      "pluginId": "pushbots-cordova-plugin",
+      "id": "onesignal-cordova-plugin.OneSignal",
+      "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
+      "pluginId": "onesignal-cordova-plugin",
       "clobbers": [
-        "PushbotsPlugin"
+        "OneSignal"
       ]
     }
   ];
@@ -416,6 +416,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "es6-promise-plugin": "4.2.2",
     "cordova-plugin-screen-orientation": "3.0.2",
     "cordova-plugin-statusbar": "2.4.3",
-    "pushbots-cordova-plugin": "1.6.15-rc8"
+    "onesignal-cordova-plugin": "2.9.1"
   };
 });

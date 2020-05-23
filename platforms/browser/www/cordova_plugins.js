@@ -384,11 +384,11 @@ module.exports = [
         "runs": true
     },
     {
-        "file": "plugins/pushbots-cordova-plugin/www/pushbots.js",
-        "id": "pushbots-cordova-plugin.PushbotsPlugin",
-        "pluginId": "pushbots-cordova-plugin",
+        "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
+        "id": "onesignal-cordova-plugin.OneSignal",
+        "pluginId": "onesignal-cordova-plugin",
         "clobbers": [
-            "PushbotsPlugin"
+            "OneSignal"
         ]
     }
 ];
@@ -407,7 +407,7 @@ module.exports.metadata =
     "cordova-plugin-vibration": "2.1.6",
     "cordova-plugin-screen-orientation": "3.0.2",
     "cordova-plugin-statusbar": "2.4.3",
-    "pushbots-cordova-plugin": "1.6.15-rc8"
+    "onesignal-cordova-plugin": "2.9.1"
 }
 // BOTTOM OF METADATA
 });
