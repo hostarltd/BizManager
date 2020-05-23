@@ -36,6 +36,9 @@
     },
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.makeapp.bizmanager"
+    },
+    "pushbots-cordova-plugin": {
+      "PACKAGE_NAME": "com.makeapp.bizmanager"
     }
   },
   "dependent_plugins": {

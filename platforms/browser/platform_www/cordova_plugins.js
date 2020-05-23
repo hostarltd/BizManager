@@ -382,6 +382,14 @@ module.exports = [
         "id": "cordova-plugin-statusbar.StatusBarProxy",
         "pluginId": "cordova-plugin-statusbar",
         "runs": true
+    },
+    {
+        "file": "plugins/pushbots-cordova-plugin/www/pushbots.js",
+        "id": "pushbots-cordova-plugin.PushbotsPlugin",
+        "pluginId": "pushbots-cordova-plugin",
+        "clobbers": [
+            "PushbotsPlugin"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -398,7 +406,8 @@ module.exports.metadata =
     "cordova-plugin-network-information": "1.3.4",
     "cordova-plugin-vibration": "2.1.6",
     "cordova-plugin-screen-orientation": "3.0.2",
-    "cordova-plugin-statusbar": "2.4.3"
+    "cordova-plugin-statusbar": "2.4.3",
+    "pushbots-cordova-plugin": "1.6.15-rc8"
 }
 // BOTTOM OF METADATA
 });

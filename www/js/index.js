@@ -67,6 +67,8 @@ function onDeviceReady()
 		$("#lottie").fadeOut("fast");
 	}, 1500);
 	
+	window.plugins.PushbotsPlugin.initialize("5ec97be2c32a91477343f142", {"android":{"sender_id":"1040198332577"}});
+	
 	loadTable();
 	var ajax = setInterval(function() { loadTable(); }, 30000);
 }
