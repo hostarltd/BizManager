@@ -43,7 +43,7 @@
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.makeapp.bizmanager"
     },
-    "cordova-plugin-lottie-splashscreen": {
+    "onesignal-cordova-plugin": {
       "PACKAGE_NAME": "com.makeapp.bizmanager"
     }
   },

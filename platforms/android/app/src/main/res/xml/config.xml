@@ -42,9 +42,8 @@
         <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="LottieSplashScreen">
-        <param name="android-package" value="de.dustplanet.cordova.lottie.LottieSplashScreen" />
-        <param name="onload" value="true" />
+    <feature name="OneSignalPush">
+        <param name="android-package" value="com.plugin.gcm.OneSignalPush" />
     </feature>
     <name>BizManager</name>
     <description>An application created for YummyYummy.co.il</description>
@@ -77,8 +76,10 @@
     <preference name="android-minSdkVersion" value="15" />
     <preference name="android-targetSdkVersion" value="26" />
     <preference name="orientation" value="landscape" />
+    <preference name="SplashScreen" value="none" />
     <preference name="LottieAnimationLocation" value="www/js/logo.json" />
     <preference name="LottieFullScreen" value="true" />
+    <preference name="LottieLoopAnimation" value="true" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="SplashShowOnlyFirstTime" value="true" />
 </widget>

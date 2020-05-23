@@ -119,10 +119,10 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-lottie-splashscreen": {
+  "onesignal-cordova-plugin": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-lottie-splashscreen@^0.8.1"
+      "id": "onesignal-cordova-plugin"
     },
     "is_top_level": true,
     "variables": {}

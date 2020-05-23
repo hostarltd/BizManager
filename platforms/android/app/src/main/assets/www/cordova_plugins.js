@@ -393,11 +393,11 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "cordova-plugin-lottie-splashscreen.LottieSplashScreen",
-      "file": "plugins/cordova-plugin-lottie-splashscreen/dist/www/lottie-splashscreen.js",
-      "pluginId": "cordova-plugin-lottie-splashscreen",
+      "id": "onesignal-cordova-plugin.OneSignal",
+      "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
+      "pluginId": "onesignal-cordova-plugin",
       "clobbers": [
-        "lottie.splashscreen"
+        "OneSignal"
       ]
     }
   ];
@@ -416,6 +416,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "es6-promise-plugin": "4.2.2",
     "cordova-plugin-screen-orientation": "3.0.2",
     "cordova-plugin-statusbar": "2.4.3",
-    "cordova-plugin-lottie-splashscreen": "0.8.1"
+    "onesignal-cordova-plugin": "2.9.1"
   };
 });

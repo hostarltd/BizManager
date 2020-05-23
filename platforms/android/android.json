@@ -65,7 +65,7 @@
               "count": 1
             },
             {
-              "xml": "<feature name=\"LottieSplashScreen\"><param name=\"android-package\" value=\"de.dustplanet.cordova.lottie.LottieSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "xml": "<feature name=\"OneSignalPush\"><param name=\"android-package\" value=\"com.plugin.gcm.OneSignalPush\" /></feature>",
               "count": 1
             }
           ]
@@ -117,9 +117,34 @@
             {
               "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
               "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"com.amazon.device.messaging.permission.RECEIVE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<permission android:name=\"com.makeapp.bizmanager.permission.RECEIVE_ADM_MESSAGE\" android:protectionLevel=\"signature\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"com.makeapp.bizmanager.permission.RECEIVE_ADM_MESSAGE\" />",
+              "count": 1
             }
           ],
-          "/manifest/application": []
+          "/manifest/application": [
+            {
+              "xml": "<amazon:enable-feature android:name=\"com.amazon.device.messaging\" android:required=\"false\" xmlns:amazon=\"http://schemas.amazon.com/apk/res/android\" />",
+              "count": 1
+            },
+            {
+              "xml": "<service android:exported=\"false\" android:name=\"com.onesignal.ADMMessageHandler\" />",
+              "count": 1
+            },
+            {
+              "xml": "<receiver android:name=\"com.onesignal.ADMMessageHandler$Receiver\" android:permission=\"com.amazon.device.messaging.permission.SEND\"><intent-filter><action android:name=\"com.amazon.device.messaging.intent.REGISTRATION\" /><action android:name=\"com.amazon.device.messaging.intent.RECEIVE\" /><category android:name=\"com.makeapp.bizmanager\" /></intent-filter></receiver>",
+              "count": 1
+            }
+          ]
         }
       }
     }
@@ -167,7 +192,7 @@
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.makeapp.bizmanager"
     },
-    "cordova-plugin-lottie-splashscreen": {
+    "onesignal-cordova-plugin": {
       "PACKAGE_NAME": "com.makeapp.bizmanager"
     }
   },
@@ -566,11 +591,11 @@
       ]
     },
     {
-      "id": "cordova-plugin-lottie-splashscreen.LottieSplashScreen",
-      "file": "plugins/cordova-plugin-lottie-splashscreen/dist/www/lottie-splashscreen.js",
-      "pluginId": "cordova-plugin-lottie-splashscreen",
+      "id": "onesignal-cordova-plugin.OneSignal",
+      "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
+      "pluginId": "onesignal-cordova-plugin",
       "clobbers": [
-        "lottie.splashscreen"
+        "OneSignal"
       ]
     }
   ],
@@ -589,6 +614,6 @@
     "es6-promise-plugin": "4.2.2",
     "cordova-plugin-screen-orientation": "3.0.2",
     "cordova-plugin-statusbar": "2.4.3",
-    "cordova-plugin-lottie-splashscreen": "0.8.1"
+    "onesignal-cordova-plugin": "2.9.1"
   }
 }
