@@ -25,6 +25,18 @@ function checkConnection()
 	return states[networkState];
 } 
 
+function loadTable()
+{
+	$.ajax({
+		async: false,
+		type: "POST",
+		url: "https://order.yummyyummy.co.il/ajax/load-shippings",
+		data: device.uuid,
+		success: function(data) {
+			$("#table_data").html(data);
+		}
+	});
+}
 
 function onDeviceReady() 
 {
@@ -37,6 +49,13 @@ function onDeviceReady()
 	screen.orientation.lock('portrait');
 	
 	checkConnection();
+	
+	setTimeout(function() {
+		$("#lottie").hide("slow");
+	} 3000);
+	
+	loadTable();
+	var ajax = setInterval(function() { loadTable(); }, 15000);
 }
 
 function onPause() {
