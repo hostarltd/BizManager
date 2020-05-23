@@ -42,9 +42,6 @@
         <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="OneSignalPush">
-        <param name="android-package" value="com.plugin.gcm.OneSignalPush" />
-    </feature>
     <name>BizManager</name>
     <description>An application created for YummyYummy.co.il</description>
     <author email="roy@makeapp.co.il" href="https://www.makeapp.co.il/">
